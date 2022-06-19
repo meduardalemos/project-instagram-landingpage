@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #E6E6E6;
+    min-width: 450px;
+}
+
+#instagram-wrapper {
+    background-color: white;
+    height: 98.5%;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#left-content {
+    height: 80%;
+    max-width: 350px;
+    display: flex;
+    align-content: center;
+    padding: 10px;
+}
+
+#left-content img{
+    max-height: 550px;
+    margin: auto;
+}
+
+#right-content {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+    gap: 25px;
+}
+
+.account-container {
+    border: .5px solid #E6E6E6;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"], input[type="password"] {
+    width: 95%;
+    height: 30px;
+    margin: 3px auto;
+    outline: none;
+    border: .5px solid #E6E6E6;
+    font-size: 12px;
+    text-indent: 10px;
+    color: #808080;
+}
+
+.login-container input::placeholder {
+    font-size: 12px;
+    text-indent: 10px;
+}
+
+.login-container img {
+    width: 40%;
+}
+
+.login-btn {
+    color: white;
+    background-color: #B2DFFC;
+    font-weight: 600;
+    margin: 10px auto;
+    width: 95%;
+    height: 30px;
+    margin: 7px auto;
+    border: .5px solid #E6E6E6;
+    outline: none;
+}
+
+.login-btn:hover {
+    cursor: pointer;
+}
+
+#or-divisor {
+    color: #808080;
+    font-size: .9em;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#or-divisor::after, #or-divisor::before {
+    content: "";
+    width: 130px;
+    height: 1.5px;
+    background-color: #E6E6E6;
+    margin: 0 10px;
+}
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fb-login {
+    color: #385185;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: .9em;
+    display: flex;
+    align-items: center;
+}
+
+#forgot-password {
+    color:#385185;
+    font-size: .8em;
+}
+
+#logo-fb {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.create-account-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 50px;
+    border: .5px solid #E6E6E6;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: .85em;
+}
+
+.create-account-container a {
+    color: #0095F6;
+    font-weight: 600;
+}
+
+.stores-container {
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stores-container h5 {
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.stores-btns {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+.stores-btns img:hover {
+    cursor: pointer;
+}
+
+.stores-btns img {
+    width: 45%;
+
+}
+
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#footer-content a {
+    color: #808080;
+    margin: 5px;
+    font-size: .75em;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+    #main-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #instagram-wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    #footer-content {
+        width: 75%;
+    }
+}
